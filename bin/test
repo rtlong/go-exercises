@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require_relative '../lib/test_helper'
+require 'pathname'
+
+Tests.new(runnables: Pathname.glob('*.{go,rb}')).run

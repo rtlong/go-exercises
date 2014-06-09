@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.4.3)
+    filewatcher (0.3.4)
+      trollop (~> 2.0)
+    subprocess (1.2.0)
+    trollop (2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ansi
+  filewatcher
+  subprocess
