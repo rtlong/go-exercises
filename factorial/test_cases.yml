@@ -1,0 +1,38 @@
+---
+
+- args: -2
+  out: ""
+  err: !ruby/regexp /must be positive/i
+  exit: 1
+
+- args: []
+  exit: 1
+  err: !ruby/regexp /one integer/i
+
+- args: 0
+  out: 1
+
+- args: 1
+  out: 1
+
+- args: 2
+  out: 2
+
+- args: 4
+  out: 24
+
+- args: 5
+  out: 120
+
+- args: 6
+  out: 720
+
+- args: 7
+  out: 5040
+
+- args: 400
+  out: !ruby/regexp /\A640345228\d{860}\z/
+
+- args: banana
+  exit: 1
+  err: !ruby/regexp /one integer/i

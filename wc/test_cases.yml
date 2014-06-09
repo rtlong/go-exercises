@@ -1,0 +1,15 @@
+---
+
+- input: |
+    foo bar baz. foo  bar
+    banana orange
+
+    kitten-parade
+  out: 8 words in 4 lines
+
+- input: foo
+  out: 1 word in 1 line
+  err: ""
+
+- input: "\n\n\n\n"
+  out: 0 words in 4 lines

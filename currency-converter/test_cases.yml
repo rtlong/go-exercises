@@ -1,0 +1,22 @@
+---
+
+# 1 BTC = $649.40
+
+- args: ['112.34', 'USD', 'mBTC']
+  out: "172.04 mBTC"
+
+- args: ['555', 'USD', 'BTC']
+  out: "0.85 BTC"
+
+- args: ['1', 'BTC', 'USD']
+  out: "653.00 USD"
+
+- args: ['1', 'EUR', 'USD']
+  out: ""
+  exit: 1
+  err: !ruby/regexp /No rate found/
+
+- args: ['1', 'USD']
+  out: ""
+  exit: 1
+  err: !ruby/regexp /Please/

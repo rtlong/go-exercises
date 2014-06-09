@@ -1,0 +1,14 @@
+---
+
+- input: |
+    foo
+    bar
+    baz
+  out: |
+    baz
+    bar
+    foo
+
+- input: "foo"
+  out: "foo"
+  err: ""
